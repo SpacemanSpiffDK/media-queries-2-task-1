@@ -9,17 +9,6 @@
 	/* UNLESS YOU HAVE A REALLY GOOD REASON TO */
 }
 
-.clearfix {
-	overflow: auto;
-	/* avoid using clearfix - use flex instead of float */
-}
-
-.clearfix::after {
-	content: "";
-	clear: both;
-	display: table;
-}
-
 .flex {
 	display: flex;
 	align-content: space-between;
@@ -35,6 +24,58 @@ body {
 	font-size: 4vw;
 	line-height: 1.4;
 }
+
+.box {
+	padding: 1vw;
+}
+
+.box-1 {
+	background-color: #9f9;
+}
+.box-2 {
+	background-color: #99f;
+}
+.box-3 {
+	background-color: #f99;
+}
+.box-4 {
+	background-color: #9ff;
+}
+
+@media (max-width: 640px) {
+	.flex {
+		display: block;
+	}
+}
+
+@media (min-width: 641px) and (max-width: 1200px) {
+	.box {
+		width: 50%;
+	}
+	.flex {
+		flex-wrap: wrap;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 640px) {
 	body {
